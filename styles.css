@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    padding-top: 70px; /* Отступ для фиксированной шапки */
+    padding-top: 70px;
 }
 
 .navbar {
@@ -39,7 +39,6 @@ footer {
     background-color: #343a40 !important;
 }
 
-/* Дополнительные стили для раздела "О нас" */
 .about-section {
     position: relative;
     background-image: url('img/lazer.jpg');
@@ -93,7 +92,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Стили для раздела услуг */
 .service-item {
     background: white;
     border-bottom: 2px solid #007bff;
@@ -122,7 +120,6 @@ footer {
     line-height: 1.6;
 }
 
-/* Стили для примеров работ */
 .example-card {
     background: white;
     border-radius: 8px;
@@ -143,17 +140,17 @@ footer {
 
 .example-card img {
     border-radius: 8px;
-    width: 100%; /* Пропорциональное масштабирование */
-    height: auto; /* Сохранение пропорций */
-    max-height: 300px; /* Увеличиваем высоту изображений */
-    object-fit: contain; /* Изображение не обрезается, сохраняет пропорции */
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
 }
 
 .example-card p {
     font-size: 1.1em;
     color: #333;
-    margin-top: 15px; /* Увеличенный отступ для текста */
-    margin-bottom: 0; /* Убираем лишний отступ снизу */
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 /* Стили для видео */
@@ -167,7 +164,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100%; /* Равная высота карточек */
+    height: 100%;
 }
 
 .video-card:hover {
@@ -177,18 +174,17 @@ footer {
 
 .video-card iframe {
     border-radius: 8px;
-    width: 100%; /* Пропорциональное масштабирование */
-    height: 315px; /* Фиксированная высота для видео */
+    width: 100%;
+    height: 315px;
 }
 
 .video-card p {
     font-size: 1.1em;
     color: #333;
-    margin-top: 15px; /* Увеличенный отступ для текста */
-    margin-bottom: 0; /* Убираем лишний отступ снизу */
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
-/* Стили для блока с информацией */
 .info-box {
         padding: 15px;
     }
@@ -204,7 +200,7 @@ footer {
     .info-box .lead {
         font-size: 1.2em;
     }
-/* Адаптивность для мобильных устройств */
+
 @media (max-width: 768px) {
     .navbar-nav {
         margin-top: 10px;
@@ -232,10 +228,10 @@ footer {
     }
 
     .example-card img {
-        max-height: 200px; /* Уменьшение высоты изображения на мобильных устройствах */
+        max-height: 200px;
     }
 
     .video-card iframe {
-        height: 200px; /* Уменьшение высоты видео на мобильных устройствах */
+        height: 200px;
     }
 }

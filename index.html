@@ -218,8 +218,44 @@
                     <p><strong>Телефон:</strong><br>+7 (993) 597-53-26</p>
                 </div>
                 <div class="col-md-4">
-                    <button class="btn btn-primary" id="contactButton" data-bs-toggle="modal" data-bs-target="#contactModal">Написать нам</button>
-                </div>
+                    <div class="col-md-4">
+    <button class="btn btn-primary" id="contactButton" data-bs-toggle="modal" data-bs-target="#contactModal">
+        Написать нам
+    </button>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Свяжитесь с нами</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <form action="https://formsubmit.co/rglabpro@yandex.ru" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Имя:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Ваша почта:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Ваше сообщение:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Напишите нам" required></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
                 <div class="col-md-4">
                     <p><strong>Адрес:</strong><br>Зеленоград, проезд 687, 15 c2</p>
                 </div>

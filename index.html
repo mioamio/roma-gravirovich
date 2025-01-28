@@ -31,33 +31,69 @@
                         <a class="nav-link" href="#contacts">Контакты</a>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-primary">Написать нам</a>
+                <button class="btn btn-primary" id="contactButton" data-bs-toggle="modal" data-bs-target="#contactModal">Написать нам</button>
             </div>
         </div>
     </nav>
 
-    <section id="about" class="py-5 about-section">
-    <div class="container text-center">
-        <h1 class="display-4">О нас</h1>
-        <div class="row align-items-center">
-            <div class="col-md-6 content">
-                <p class="lead">Наша философия: Мы делаем вещи для людей и для Бизнеса! Наша мастерская имеет в своем арсенале 3 лазерных маркерщика для работы с пластиком, металлом, деревом также у нас есть станок по лазерной резке фанеры и гравировки по дереву!</p>
-            </div>
-            <div class="col-md-6">
-                <div class="stats">
-                    <h4>Выполнено более</h4>
-                    <ul>
-                        <li>1000 заявок</li>
-                    </ul>
-                    <h4>Сделано более</h4>
-                    <ul>
-                        <li>70 000 гравировок</li>
-                    </ul>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Свяжитесь с нами</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="mailto:rglabpro@yandex.ru" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="userName" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Ваш Email</label>
+                            <input type="email" class="form-control" id="userEmail" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userMessage" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="userMessage" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</section>
+
+    <section id="about" class="py-5 about-section">
+        <div class="container text-center">
+            <h1 class="display-4">О нас</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6 content">
+                    <div class="text-box">
+                        <p class="lead">Наша философия: Мы делаем вещи для людей и для Бизнеса!</p>
+                        <p>Наша мастерская имеет в своем арсенале:</p>
+                        <ul>
+                            <li>3 лазерных маркерщика для работы с пластиком, металлом, деревом</li>
+                            <li>Станок по лазерной резке фанеры</li>
+                            <li>Станок для гравировки по дереву</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="stats">
+                        <h4 class="stat-title">Выполнено более:</h4>
+                        <ul>
+                            <li>1000 заявок</li>
+                        </ul>
+                        <h4 class="stat-title">Сделано более:</h4>
+                        <ul>
+                            <li>70 000 гравировок</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="services" class="py-5 bg-light">
         <div class="container text-center">
@@ -104,7 +140,6 @@
     <section id="examples" class="py-5">
         <div class="container text-center">
             <h1 class="display-4">Примеры работ</h1>
-
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="example-card">
@@ -138,7 +173,6 @@
                 </div>
             </div>
 
-            <!-- Разделитель для видео -->
             <div class="row mt-5">
                 <div class="col-12">
                     <h2 class="mb-4">Видео наших работ</h2>
@@ -184,7 +218,7 @@
                     <p><strong>Телефон:</strong><br>+7 (993) 597-53-26</p>
                 </div>
                 <div class="col-md-4">
-                    <p><strong>Почта:</strong><br>rglabpro@yandex.ru</p>
+                    <button class="btn btn-primary" id="contactButton" data-bs-toggle="modal" data-bs-target="#contactModal">Написать нам</button>
                 </div>
                 <div class="col-md-4">
                     <p><strong>Адрес:</strong><br>Зеленоград, проезд 687, 15 c2</p>
@@ -192,8 +226,14 @@
             </div>
             <div class="row mt-4">
                 <div class="col-md-12">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10716/zelenograd/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Зеленоград</a><a href="https://yandex.ru/maps/10716/zelenograd/?ll=37.184752%2C55.989729&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.184752%2C55.989729&z=17&l=map" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="row mt-4">
+                <div class="col-md-12">
                     <p><strong>Мессенджеры и соцсети:</strong><br>
-                        <a href="https://www.youtube.com/@RG_wood" target="_blank">Youtube@RG_wood</a><br>
+                        <a href="https://www.youtube.com/@RG_wood" target="_blank">Youtube @RG_wood</a><br>
                         <a href="https://wa.me/79935975326" target="_blank">WhatsApp</a><br>
                         <a href="https://t.me/rglabpro" target="_blank">Telegram</a>
                     </p>

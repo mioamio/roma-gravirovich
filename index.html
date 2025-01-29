@@ -44,20 +44,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="mailto:rglabpro@yandex.ru" method="post" enctype="text/plain">
+                    <form action="https://formsubmit.co/rglabpro@yandex.ru" method="POST">
                         <div class="mb-3">
-                            <label for="userName" class="form-label">Ваше имя</label>
-                            <input type="text" class="form-control" id="userName" name="name" required>
+                            <label for="name" class="form-label">Имя:</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
                         </div>
                         <div class="mb-3">
-                            <label for="userEmail" class="form-label">Ваш Email</label>
-                            <input type="email" class="form-control" id="userEmail" name="email" required>
+                            <label for="email" class="form-label">Ваша почта:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
                         </div>
                         <div class="mb-3">
-                            <label for="userMessage" class="form-label">Сообщение</label>
-                            <textarea class="form-control" id="userMessage" name="message" rows="4" required></textarea>
+                            <label for="message" class="form-label">Ваше сообщение:</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Напишите нам" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -179,34 +183,36 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="video-card">
-                        <iframe 
-                            width="100%" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/XinLeP8Zcjo?si=5oLxTTa-hjTll3Gw" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="video-card">
-                        <iframe 
-                            width="100%" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/ClINumdLSlE?si=Acdz8fnm2xuV2prR" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="video-card">
+            <iframe 
+                width="100%" 
+                height="315" 
+                src="https://www.youtube-nocookie.com/embed/XinLeP8Zcjo"
+                title="YouTube video player" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="video-card">
+            <iframe 
+                width="100%" 
+                height="315" 
+                src="https://www.youtube-nocookie.com/embed/ClINumdLSlE"
+                title="YouTube video player" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
         </div>
     </section>
 
@@ -218,44 +224,8 @@
                     <p><strong>Телефон:</strong><br>+7 (993) 597-53-26</p>
                 </div>
                 <div class="col-md-4">
-                    <div class="col-md-4">
-    <button class="btn btn-primary" id="contactButton" data-bs-toggle="modal" data-bs-target="#contactModal">
-        Написать нам
-    </button>
-</div>
-
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="contactModalLabel">Свяжитесь с нами</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-            </div>
-            <div class="modal-body">
-                <form action="https://formsubmit.co/rglabpro@yandex.ru" method="POST">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Имя:</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Ваша почта:</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Ваше сообщение:</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Напишите нам" required></textarea>
-                    </div>
-                    <input type="hidden" name="_captcha" value="false">
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                        <button type="submit" class="btn btn-primary">Отправить</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
+                    <p><strong>Почта:</strong><br>rglabpro@yandex.ru</p>
+                </div>
                 <div class="col-md-4">
                     <p><strong>Адрес:</strong><br>Зеленоград, проезд 687, 15 c2</p>
                 </div>
@@ -265,7 +235,6 @@
                     <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10716/zelenograd/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Зеленоград</a><a href="https://yandex.ru/maps/10716/zelenograd/?ll=37.184752%2C55.989729&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.184752%2C55.989729&z=17&l=map" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 </div>
             </div>
-            <div class="row mt-4">
             <div class="row mt-4">
                 <div class="col-md-12">
                     <p><strong>Мессенджеры и соцсети:</strong><br>

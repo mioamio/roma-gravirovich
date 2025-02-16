@@ -75,11 +75,14 @@ footer {
 
 .about-section .row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .about-section .col-md-6 {
+    flex: 1;
     padding: 20px;
+    max-width: 50%;
 }
 
 .about-section ul {
@@ -126,6 +129,35 @@ footer {
     margin-bottom: 10px;
     color: #555;
     line-height: 1.6;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: center;
+}
+
+.philosophy,
+.achievements {
+    flex: 1;
+    max-width: 50%;
+    background: rgba(134, 134, 134, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .philosophy,
+    .achievements {
+        max-width: 100%;
+    }
 }
 
 .example-card {
@@ -285,6 +317,7 @@ footer {
 .social-icon .fa-telegram:hover {
     color: #0088cc;
 }
+
 /* Стили для мобильной навигации */
 .custom-toggler {
     display: flex;
@@ -361,31 +394,68 @@ footer {
     }
 }
 
-    .navbar-collapse {
-        background-color: #f8f9fa;
-        padding: 10px;
-    }
+.navbar-collapse {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
 
-    .service-item {
-        margin: 10px 0;
-    }
+.service-item {
+    margin: 10px 0;
+}
 
-    .about-section .row {
-        flex-direction: column;
-    }
+.about-section .row {
+    flex-direction: column;
+}
 
-    .about-section .col-md-6 {
-        padding: 10px;
-    }
+.about-section .col-md-6 {
+    padding: 10px;
+}
 
-    .example-card {
-        margin: 10px 0;
-    }
+.example-card {
+    margin: 10px 0;
+}
 
-    .example-card img {
-        max-height: 200px;
-    }
+.example-card img {
+    max-height: 200px;
+}
 
-    .video-card iframe {
-        height: 200px;
-    }
+.video-card iframe {
+    height: 200px;
+}
+
+/* Новые стили для блока "О нас" */
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fw-bold {
+    font-weight: 600;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.fas {
+    font-size: 1.2em;
+}
+
+.about-section .text-box p.lead {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.about-section .stats h4.stat-title {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.about-section .stats ul li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
